@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-header">
+    <h4>{{pageTitle + ': ' + product?.productName}}</h4>
+  </div>
+  <p style="border: 20px">Price: {{product?.price}}</p>
+  <p>Release Date: {{product?.releaseDate}}</p>
+  <p>Description: {{product?.description}}</p>
+  <p>Star Rating: {{product?.starRating}}</p>
+  <img
+    width="100" src="{{product?.imageUrl}}">
+  <div class="card-footer">
+    <button class='btn btn-outline-secondary'
+            style="'width:80px"
+            (click)="onBack()">
+      <i class="fa fa-chevron-left"></i>Back
+    </button>
+  </div>
+</div>
